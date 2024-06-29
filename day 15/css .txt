@@ -1,0 +1,16 @@
+1) grid template column : 300px 300px 300px 
+it is used to set no. of column and size of column 
+
+
+
+
+2) grid template row: 300px 300px 300px 
+it is used to set no. of row and size of row
+
+3) fr stands for fractional unit 
+it will equally divide the 3 column
+it will equally divide the width
+
+repeat(5, 100px)
+5 stands for no. of rows 
+100 px size of the row 

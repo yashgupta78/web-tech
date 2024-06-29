@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .grid-container {
+            width: 90%;
+            height: 80vh;
+            margin: 40px auto;
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 1fr 3fr;
+        }
+
+        .grid-items {
+            border: 1px solid black;
+        }
+
+        .d1 {
+            display: flex;
+        }
+
+        .flex-items {
+            width: 50%;
+            border-right: 1px solid black;
+        }
+
+        .d2 {
+            display: flex;
+            flex-direction: column !important;
+        }
+
+        .dd {
+            height: 50%;
+            border-bottom: 1px solid black;
+        }
+
+        .dd2 {
+            display: flex;
+            flex-direction: row !important;
+        }
+
+        .dd2>div {
+            border-right: 1px solid black;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-items">grid-item</div>
+        <div class="grid-items d1">
+            <div class="flex-items">flex-items</div>
+            <div class="flex-items">flex-items</div>
+        </div>
+        <div class="grid-items">grid-item</div>
+        <div class="grid-items">grid-item</div>
+        <div class="grid-items d2">
+            <div class="dd">flex-items</div>
+            <div class="dd dd2">
+                <div>flex-items</div>
+                <div>flex-items</div>
+            </div>
+        </div>
+        <div class="grid-items">grid-items</div>
+    </div>
+</body>
+
+</html>

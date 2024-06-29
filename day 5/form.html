@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5</title>
+</head>
+
+<body>
+    <form action="index.html" target="_blank">
+        <h1>Sign In</h1>
+        <label for="username">Enter Username : </label>
+        <input type="username" name="username" id="username" required><br>
+
+        <label for="password">Enter Password: </label>
+        <input type="password" name="password" id="password" required><br>
+
+        <label for="email">Enter Email :</label>
+        <input type="email" name="email" id="email" required><br>
+
+        <input type="tel" name="phoneno." id="phoneno." placeholder="Enter Phone Number" required><br>
+
+        <label for="DOB">Enter Date of Birth (DOB): </label>
+        <input type="date" name="DOB" id="DOB"><br>
+
+        <label for="percentage">HTML Skill : </label>
+        <input type="range" name="percentage" id="percentage" min="35" max="100"><br>
+
+        <span>Select Gender :</span>
+        <input type="radio" name="gender" value="male" id="male">Male
+        <input type="radio" name="gender" value="female" id="female">Female
+        <input type="radio" name="gender" value="others" id="others">Others <br>
+
+
+        <span>Select Course</span>
+        <input type="checkbox" name="course" id="java" value="java">Java
+        <input type="checkbox" name="course" id="PHP" value="PHP">PHP
+        <input type="checkbox" name="course" id="java script" value="java script">Java Script
+        <input type="checkbox" name="course" id="React" value="React">React
+        <input type="checkbox" name="course" id="Python" value="Python">Python
+        <br>
+
+        <span>Select Country</span>
+        <select name="country" id="country">
+            <option value="" hidden selected>Select</option>
+            <optgroup label="Asia">
+                <option value="India">India</option>
+                <option value="Russia">Russia</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Thailand">Thailand</option>
+            </optgroup>
+            <optgroup label="Africa">
+                <option value="Africa">Africa</option>
+            </optgroup>
+            <optgroup label="America">
+                <option value="Canada">Canada</option>
+                <option value="America">USA</option>
+            </optgroup>
+        </select><br>
+        <br>
+        <textarea name="message" id="message" rows="10" col="20" style="resize: none;"></textarea><br>
+
+        <input list="products" name="product" id="product" placeholder="Search product">
+        <datalist id="products">
+            <option value="mobile phone"></option>
+            <option value="Tablet"></option>
+            <option value="Smart watch"></option>
+            <option value="Air pod"></option>
+            <option value="Key"></option>
+        </datalist>
+        <button type="submit">Submit</button>
+        <button type="button">Button</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+
+</html>
+

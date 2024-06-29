@@ -1,0 +1,47 @@
+.link1:link {
+  color: goldenrod;
+}
+
+.link1:visited {
+  color: purple;
+}
+
+.link1:hover {
+  color: red;
+}
+
+.link1:active {
+  color: brown;
+}
+
+.link1:focus {
+  color: khaki;
+}
+
+#bt1 {
+  padding: 10px, 20px;
+  border: none;
+  background: black;
+  color: blueviolet;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ul > li:first-child {
+  background: hotpink;
+}
+ul > li:last-child {
+  background: rgb(16, 197, 97);
+}
+ul > li:nth-child(7) {
+  background: magenta;
+}
+
+.container {
+  width: 100%;
+  border: 1px solid black;
+  background: pink;
+}
+.container2 {
+  margin: 40px, 40px;
+}

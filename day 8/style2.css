@@ -1,0 +1,32 @@
+*& selectors in CSS */
+/* id = #
+class = .
+tagname (dis- it will apply for all the tag)
+groupname = it will apply on groups
+universal = * it will mention on top  */
+
+
+*{
+    background: yellowgreen;
+}
+#head{
+    background: burlywood;
+    color: aqua;
+}
+#para{
+    background: black;
+    color: white;
+}
+.active{
+    background: blue;
+    color: aliceblue;
+}
+.demo{
+    color: aquamarine;
+}
+aside{
+    background: hotpink;
+}
+b,u,i{
+    background: khaki;
+}

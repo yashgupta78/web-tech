@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+}
+.container {
+  width: 100%;
+  background: #eeee;
+  height: 100px;
+}
+.container > header {
+  height: 100px;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+}
+.container > header > aside {
+  height: 100px;
+}
+.container > header > .left {
+  flex-basis: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.container > header > .left > h1 {
+  font-size: 25px;
+}
+.container > header > .center {
+  flex-basis: 60%;
+}
+.container > header > .center > ul {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+}
+.container > header > .center > ul > li {
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.container > header > .right {
+  flex-basis: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.container > header > .right > button {
+  padding: 10px 20px;
+  border: none;
+  background: #111;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.container > header > .right > button:hover {
+  background: purple;
+  color: #fff;
+  border: none;
+}
+
+@media (max-width: 1050px) and (min-width: 880px) {
+  .container > header > .left > h1 {
+    font-size: 20px;
+  }
+  .container > header > .center > ul > li {
+    font-size: 13px;
+  }
+  .container > header > .right > button {
+    font-size: 10px;
+    padding: 10px;
+  }
+}
+@media (max-width: 880px) and (min-width: 680px) {
+  .container > header > .left > h1 {
+    font-size: 17px;
+  }
+  .container > header > .center > ul > li {
+    font-size: 11px;
+  }
+  .container > header > .right > button {
+    font-size: 7px;
+    padding: 7px;
+  }
+  .container > header > .center > ul {
+    gap: 20px;
+  }
+}
+@media (max-width: 880px) and (min-width: 680px) {
+  .container > header > .left > h1 {
+    font-size: 17px;
+  }
+  .container > header > .center > ul > li {
+    font-size: 11px;
+  }
+  .container > header > .right > button {
+    font-size: 7px;
+    padding: 7px;
+  }
+  .container > header > .center > ul {
+    gap: 20px;
+  }
+}

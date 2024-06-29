@@ -1,0 +1,25 @@
+/*.container p{
+    background: yellow;
+}*/
+
+.container > p{
+    background: hotpink;
+}
+
+/*.a2 > p + h1{
+    color: white;
+    background-color: black;
+}*/
+
+.a2 > p ~ h1{
+    color: white;
+    background-color: black;
+}
+
+form > input [type ="password"]{
+    background-color: khaki;
+}
+
+form > input[required]{
+    background-color: red;
+}

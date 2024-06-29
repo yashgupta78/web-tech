@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 85%;
+            height: 90vh;
+            border: 1px solid black;
+            position: relative;
+        }
+
+        .sub {
+            height: 150px;
+            width: 150px;
+            border: 1px solid black;
+        }
+
+        .first {
+            z-index: 1;
+            background: #cccc;
+            position: relative;
+            left: 200px;
+            top: 250px;
+        }
+
+        .second {
+            position: absolute;
+            right: 30px;
+            left: 50px;
+            right: 50px;
+            bottom: 40px;
+            background-color: yellow;
+        }
+
+        .third {
+            background-color: aqua;
+            position:fixed;
+            top: 100px;
+            bottom: 100px;
+            left: 100px;
+            right: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sub first"> one </div>
+        <div class="sub second"> two </div>
+        <div class="sub third"> three </div>
+
+    </div>
+
+</body>
+
+</html>

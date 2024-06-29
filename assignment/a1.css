@@ -1,0 +1,27 @@
+.heading{
+margin-left: 500px;
+}
+.table-content {
+    width: 80%;
+    margin-left: 10%;
+    border-color: greenyellow;
+    border-spacing: 0;
+}
+th{
+    background-color: green;
+    color: whitesmoke;
+    padding: 10px ;
+}
+td{
+    padding: 10px ;
+}
+.footer{
+    margin-left: 10.5%;  
+}
+.footer > a :link, a:visited{
+    color: green;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}

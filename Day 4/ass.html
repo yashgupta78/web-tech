@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment - 02</title>
+
+    <style>
+        .div-content{
+            width: 25%;
+            border: 5px solid black;
+        }
+        .div-content h4{
+            justify-content: center;
+            text-align: center;
+        }
+        .form-content{
+            margin-left: 20px;
+            justify-content: center;
+        }
+        .form-content input[type="text"],
+        .form-content input[type="email"],
+        .form-content input[type="password"],
+        .form-content input[type="date"],
+        .form-content textarea{
+            width: 95%;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Form-01: </h1>
+        <div class="div-content">
+        <form action="submit.html" class="form-content">
+            <h4>User Personal Information</h4> 
+        <label for="username" >Enter your full name <br>
+            <input type="text" name="username" id="username" required>
+            <br><br>
+        </label>
+
+        <label for="email">Enter your email <br>
+            <input type="email" name="email" id="email" required>
+        </label>
+
+        <br><br>
+        <label for="password">Enter your password <br>
+            <input type="password" name="password" id="password" required>
+        </label>
+
+        <br><br>
+        <label for="cpassword">Confirm your password <br>
+            <input type="password" name="cpassword" id="cpassword" required>
+        </label>
+        <br><br>
+
+        <span>Enter your gender</span><br>
+        <input type="radio" name="gender" value="male" id="male">Male
+        <input type="radio" name="gender" value="female" id="female" >Female
+        <input type="radio" name="gender" value="others" id="others">Others <br><br>
+
+        <label for="DOB">Enter your Date of Birth<br>
+            <input type="date" name="DOB" id="DOB">
+        </label>
+        <br><br>
+        
+        <label for="address">Enter your Address<br>
+            <textarea id="address" name="address" rows="3" placeholder="Noida Sector 137" required></textarea><br>
+            <button>Submit</button><br><br>
+    </form></div>
+
+    <!-- 2nd Form -->
+    <h1>Form-02: </h1>
+        <h1>Application Form</h1>
+        <form action="submit.html">
+            <label for="fname">First Name: </label>
+            <input type="text" name="Fname" id="fname" required>
+            <label for="fname">Last Name: </label>
+            <input type="text" name="lname" id="lname" required>
+            
+            <br><br>
+            <label for="DOB">Date of birth</label>
+            <input type="date" name="DOB" id="DOB" required>
+            <label for="Age">Age:</label>
+            <input type="number" name="Age" id="Age" min="0" max="100" required><br><br>
+
+            <label for="Gender">Gender</label>
+            <select name="gender" id="Gender" required><option value="Male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Other</option></select>
+                <label for="Email">Email Address:</label>
+                <input type="email" name="Email" id="Email" placeholder="Enter email address" required><br><br>
+
+                <label for="PA">Position Available:</label>
+                <input type="radio" name="PA" id="PA" value="Junior Developer">Junior Developer
+                <input type="radio" name="PA" id="PA" value="Mid-level Developer">Mid-level Developer
+                <input type="radio" name="PA" id="PA" value="Senior Developer ">Senior Developer <br><br>
+
+                <label for="PL">Programming Languages:</label>
+                <input type="checkbox" name="PL" id="PL" value="Java">Java
+                <input type="checkbox" name="PL" id="PL" value="JavaScript">JavaScript
+                <input type="checkbox" name="PL" id="PL" value="Python">Python<br><br>
+
+                <label for="password">Password: </label>
+                <input type="password" name="password" id="password" required>
+                <label for="fname">Confirm Password: </label>
+                <input type="password" name="password" id="password" required><br><br>
+
+                <button>Submit</button> <button type="reset">Reset</button>
+                <br><br>
+        </form>
+</body>
+</html>

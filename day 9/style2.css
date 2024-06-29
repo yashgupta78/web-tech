@@ -1,0 +1,25 @@
+.head::first-letter{
+    color: violet;
+    background-color: black;
+}
+ 
+#para::first-line{
+    background-color: purple;
+}
+
+#head2::before{
+    content:"hemmmmlllooo";
+}
+
+#head2::after{
+    content:"golumon";
+}
+
+#para::selection{
+    background-color: aqua;
+    color: white;
+}
+
+ol>li::marker{
+    color: maroon;
+}
